@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules   # préserve les node_modules du conteneur
+    env_file:
+      - .env
+    restart: unless-stopped
