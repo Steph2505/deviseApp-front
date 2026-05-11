@@ -1,44 +1,34 @@
-# deviseApp
+# DeviseApp — Frontend Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+Application de gestion des devises développée avec Vue.js 3 et Laravel 10.
 
-## Recommended IDE Setup
+## Prérequis
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Node.js >= 18
+- npm >= 9
+- Backend Laravel en cours d'exécution
 
-## Recommended Browser Setup
+## Installation
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+# Cloner le projet
+git clone https://github.com/TON_USERNAME/deviseApp.git
+cd deviseApp
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+# Installer les dépendances
 npm install
-```
 
-### Compile and Hot-Reload for Development
+# Configurer l'environnement
+cp .env.example .env
 
-```sh
+# Modifier VITE_API_URL dans .env selon votre configuration
+VITE_API_URL=http://localhost:8000/api
+
+# Lancer le serveur de développement
 npm run dev
-```
 
-### Compile and Minify for Production
+## Stack technique
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Vue.js 3 (Composition API)
+- Pinia (gestion d'état)
+- Vue Router
+- Axios
